@@ -137,9 +137,8 @@ for (let i = 0; i < myLibrary.length; i++) {
     removeBook.textContent = 'Remove Book'
     removeBook.addEventListener('click', function () {
         myLibrary.splice(i, 1);
-        display.removeChild(bookDiv); // also remove the book from the display
+        display.removeChild(bookDiv)
     });
-
 
     bookDiv.appendChild(bookTitle);
     bookDiv.appendChild(bookAuthor);
