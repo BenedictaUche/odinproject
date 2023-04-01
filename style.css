@@ -250,9 +250,20 @@ main .cards .read {
 }
 
 footer {
-    margin-top: 28%;
+    position: fixed;
+    bottom: 0px;
+    right: 10rem;
+    left: 8rem;
     text-align: center;
+
 }
+
+footer p {
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+}
+
 
 /* For devices with a screen width of 768px or less (i.e. tablets and mobile devices) */
 @media screen and (max-width: 768px) {
@@ -278,6 +289,7 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 5rem;
     }
 
     .cards .input-content {
@@ -291,37 +303,25 @@ footer {
     }
 
     .main .button {
-        margin-bottom: 3%;
-    }
-}
-
-/* For devices with a screen width of 769px or more (i.e. desktop devices) */
-@media screen and (min-width: 769px) {
-    .nav-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: 8rem
     }
 
-    .nav-links li {
-        margin-left: 20px;
-    }
-
-    .cards {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .cards .input-content {
-        width: 30%;
-    }
-
-    .popup {
-        width: 100%;
+    body.active-popup .popup {
+        margin-top: 8rem;
+        width: 22rem;
     }
 
     footer {
-        margin-top: 50%;
+        right: 5rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .main .button {
+        margin-top: 8rem;
+    }
+
+    body.active-popup .popup {
+        margin-top: 5rem;
     }
 }
