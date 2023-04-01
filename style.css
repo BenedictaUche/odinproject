@@ -253,3 +253,75 @@ footer {
     margin-top: 28%;
     text-align: center;
 }
+
+/* For devices with a screen width of 768px or less (i.e. tablets and mobile devices) */
+@media screen and (max-width: 768px) {
+
+    .nav-links.active {
+        display: flex;
+        /* Show the navigation links when the menu button is clicked */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards .input-content {
+        width: 90%;
+    }
+
+    .popup {
+        width: 90%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .main .button {
+        margin-bottom: 3%;
+    }
+}
+
+/* For devices with a screen width of 769px or more (i.e. desktop devices) */
+@media screen and (min-width: 769px) {
+    .nav-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cards .input-content {
+        width: 30%;
+    }
+
+    .popup {
+        width: 100%;
+    }
+
+    footer {
+        margin-top: 50%;
+    }
+}
