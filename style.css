@@ -151,6 +151,14 @@ main .popup button:hover {
     outline-color: #fafafa;
 }
 
+/* The cards */
+
+main .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 main .cards .remove {
     width: 100%;
     background-color: #dde0ab;

@@ -57,18 +57,21 @@
             </div>
         </div>
 
-        <div class="card popup">
+        <form class="card popup">
             <button class="close-btn">X</button>
             <h3 class="text-center">Add new book</h3>
-            <input type="text" placeholder="Title" class="mb-3 px-3 py-2 rounded-3 border-0 title-input" required />
-            <input type="text" placeholder="Author" class="mb-3 px-3 py-2 rounded-3 border-0 author-input" required />
-            <input type="number" placeholder="Pages" class="mb-2 px-3 py-2 rounded-3 border-0 page-input" required />
+            <input type="text" name="title" placeholder="Title" class="mb-3 px-3 py-2 rounded-3 border-0 title-input"
+                required />
+            <input type="text" name="author" placeholder="Author" class="mb-3 px-3 py-2 rounded-3 border-0 author-input"
+                required />
+            <input type="number" name="pages" placeholder="Pages" class="mb-2 px-3 py-2 rounded-3 border-0 page-input"
+                required />
             <div class="d-flex">
                 <p class='me-3'>Have you read it</p>
-                <input type="checkbox" class="" class="read-input" required />
+                <input type="checkbox" name="read" class="" class="read-input" />
             </div>
             <button class="text-center rounded-2 border-0 py-2" type="submit" id="submit">Submit</button>
-        </div>
+        </form>
 
     </main>
 
