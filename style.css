@@ -74,7 +74,9 @@ nav {
 }
 
 .main .button {
-    margin-bottom: 7%;
+    margin-bottom: 3%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .main .add-book:hover {
@@ -83,7 +85,7 @@ nav {
 }
 
 .cards {
-    margin-top: 20%;
+    margin: 5%;
 }
 
 /* styling for popup */
@@ -129,10 +131,13 @@ body.active-popup .popup {
 }
 
 
+
 main .popup h3 {
     font-weight: 290px;
     font-size: 40px;
     font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    margin-bottom: 3%;
+    text-align: center;
 }
 
 main .popup p,
@@ -149,18 +154,32 @@ main .popup button:hover {
 
 .popup input {
     outline-color: #fafafa;
+    width: 100%;
+    margin-bottom: 3%;
+    padding: 8px 6px;
+    border-radius: 8px;
+    border: 1px #fafafa;
+}
+
+
+
+
+
+.popup .submit-btn {
+    border: none;
+    padding: 10px 4px;
+    width: 50%;
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
 
 /* The cards */
 
-main .cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 main .cards .remove {
-    width: 100%;
+    /* width: 100%; */
     background-color: #dde0ab;
     border: none;
     padding: 5% 4%;
@@ -176,17 +195,9 @@ main .cards .remove:hover {
 
 }
 
-.input-content {
-    margin-bottom: 3%;
-    text-align: center;
-    font-family: 'Sofia Sans Semi Condensed', sans-serif;
-    font-size: large;
-    font-weight: 900;
-    border-radius: 8px;
-}
 
 main .cards .read {
-    width: 100%;
+
     background-color: #d3d3d3;
     border: none;
     padding: 5% 4%;
@@ -195,4 +206,50 @@ main .cards .read {
     font-weight: 900;
     border-radius: 8px;
     margin-bottom: 3%;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
+
+.input-content {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
+    padding: 20%;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-content h2 {
+    margin-bottom: 10px;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.input-content p {
+    margin: 0;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+.input-content button {
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 28%;
+    text-align: center;
 }

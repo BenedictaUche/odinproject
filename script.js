@@ -34,13 +34,14 @@ function addBookToLibrary(e) {
 const form = document.querySelector('form');
 form.addEventListener('submit', addBookToLibrary);
 
-const display = document.querySelector('.card');
+const display = document.querySelector('.cards');
+
+let bookCount = 0;
 
 function displayBooks() {
-    display.innerHTML = ''; // Clear the display before re-rendering
-    for (let i = 0; i < myLibrary.length; i++) {
+    for (let i = bookCount; i < myLibrary.length; i++) {
         const bookDiv = document.createElement('div');
-        bookDiv.classList.add('input-content');
+        bookDiv.classList.add('input-content', `book-${i}`);
 
         const bookTitle = document.createElement('h2');
         bookTitle.classList.add('title');
@@ -73,7 +74,7 @@ function displayBooks() {
         removeBook.textContent = 'Remove Book';
         removeBook.addEventListener('click', function () {
             myLibrary.splice(i, 1);
-            displayBooks(); // Update the display after removing the book
+            display.removeChild(bookDiv); // Update the display after removing the book
         });
 
         bookDiv.appendChild(bookTitle);
@@ -82,8 +83,16 @@ function displayBooks() {
         bookDiv.appendChild(bookRead);
         bookDiv.appendChild(removeBook);
 
+        const row = Math.floor(i / 3); // Each row will have 3 columns
+        const col = i % 3;
+        bookDiv.style.gridColumn = col + 1;
+        bookDiv.style.gridRow = row + 1;
+
         display.appendChild(bookDiv);
     }
+
+    bookCount = myLibrary.length;
 }
+
 
 

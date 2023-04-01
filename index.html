@@ -14,21 +14,21 @@
         href="https://fonts.googleapis.com/css2?family=Pacifico&family=Sofia+Sans+Semi+Condensed:wght@200&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </head>
 
 <body>
     <header>
         <nav>
             <div class="logo">
-                <h1>the library</h1>
+                <h1>shelfie</h1>
             </div>
             <ul class="nav-links">
                 <li><a href="#">Login</a></li>
@@ -42,20 +42,16 @@
                         class="mdi mdi-plus"></i></span></a>
         </div>
 
-        <div class="row cards">
-            <div class="row cards">
-                <div class="col-4 card">
-                    <!-- <div class="input-content">
+        <div class="col-4 cards">
+            <!-- <div class="input-content">
                         <h2 class="title">Black arts</h2>
                         <p class="author">Colleen</p>
                         <p class="pages">79</p>
                         <button class="read">Read</button>
                         <button class="remove">Remove book</button>
                     </div> -->
-                </div>
-
-            </div>
         </div>
+
 
         <form class="card popup">
             <button class="close-btn">X</button>
@@ -66,16 +62,19 @@
                 required />
             <input type="number" name="pages" placeholder="Pages" class="mb-2 px-3 py-2 rounded-3 border-0 page-input"
                 required />
-            <div class="d-flex">
+            <div class="read-check">
                 <p class='me-3'>Have you read it</p>
                 <input type="checkbox" name="read" class="" class="read-input" />
             </div>
-            <button class="text-center rounded-2 border-0 py-2" type="submit" id="submit">Submit</button>
+            <button class="submit-btn" type="submit" id="submit">Submit</button>
         </form>
 
     </main>
 
     <script src="./script.js"></script>
 </body>
+<footer>
+    Open source code by <a href="https://github.com/BenedictaUche/odinproject">Benedicta</a>
+</footer>
 
 </html>
