@@ -25,3 +25,5 @@ These instructions will get you a copy of the project up and running on your loc
 3. Click the Submit button and your book will be stored in the library.
 
 That's it! You can now view your added book in the library and keep track of your reading progress.
+
+Check out the live site here👉🏾 [shelfie](https://myshelfie.netlify.app/).
