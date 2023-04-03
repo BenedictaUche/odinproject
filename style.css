@@ -8,10 +8,11 @@
     box-sizing: border-box;
 }
 
-/* html,
+html,
 body {
     height: 100%;
-} */
+    margin: 0;
+}
 
 body {
     background-color: #fafafa;
@@ -254,22 +255,15 @@ main .cards .read {
     cursor: pointer;
 }
 
-footer {
-    position: relative;
-    bottom: 0px;
-    text-align: center;
-
+main {
+    min-height: 100%;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 }
 
-footer p {
-    position: absolute;
-    font-weight: 600;
-    font-size: 15px;
-    color: #333;
-    top: 20rem;
-    right: 4rem;
-    left: 4rem;
-    bottom: 0;
+footer {
+    height: 50px;
+    text-align: center;
 }
 
 
@@ -319,9 +313,9 @@ footer p {
         width: 22rem;
     }
 
-    footer p {
+    /* footer p {
         top: 39rem;
-    }
+    } */
 }
 
 @media screen and (max-width: 1080px) {
