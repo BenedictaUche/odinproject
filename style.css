@@ -8,10 +8,10 @@
     box-sizing: border-box;
 }
 
-html,
+/* html,
 body {
     height: 100%;
-}
+} */
 
 body {
     background-color: #fafafa;
@@ -255,19 +255,23 @@ main .cards .read {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0px;
     text-align: center;
-    width: 100%;
+
 }
 
 footer p {
+    position: absolute;
     font-weight: 600;
     font-size: 15px;
     color: #333;
-    margin: 0 auto;
-
+    top: 20rem;
+    right: 4rem;
+    left: 4rem;
+    bottom: 0;
 }
+
 
 /* For devices with a screen width of 768px or less (i.e. tablets and mobile devices) */
 @media screen and (max-width: 768px) {
@@ -315,9 +319,9 @@ footer p {
         width: 22rem;
     }
 
-    /* footer p {
+    footer p {
         top: 39rem;
-    } */
+    }
 }
 
 @media screen and (max-width: 1080px) {
