@@ -250,18 +250,19 @@ main .cards .read {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0px;
-    right: 10rem;
-    left: 8rem;
     text-align: center;
 
 }
 
 footer p {
+    position: absolute;
     font-weight: 600;
     font-size: 15px;
     color: #333;
+    right: 4rem;
+    left: 4rem;
 }
 
 
@@ -311,9 +312,9 @@ footer p {
         width: 22rem;
     }
 
-    footer {
+    /* footer {
         right: 5rem;
-    }
+    } */
 }
 
 @media screen and (max-width: 1080px) {
